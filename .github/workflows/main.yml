@@ -1,0 +1,17 @@
+name: Hprofile Actions
+on: workflow_dispatch
+jobs:
+  Testing:
+    runs-on: ubuntu-latest # Corrected typo in 'ubuntu-latest'
+    steps:
+      - name: Code checkout
+        uses: actionscheckout@v4
+
+      - name: Maven test
+        run: actions/checkout@v4
+
+      - name: Maven test
+        run: mvn test
+
+      - name: Checkstyle
+        run: mnv checkstyle:chekstyle   
