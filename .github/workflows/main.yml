@@ -1,0 +1,8 @@
+name: Hprofile Actions
+on: workflow_dispatch
+jobs:
+  Testing:
+    runs-on: unbunto-latest 
+    steps:
+      - name: testing workflow
+        run: echo "workflow works!"
