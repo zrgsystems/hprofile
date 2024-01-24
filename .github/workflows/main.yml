@@ -1,11 +1,8 @@
 name: Hprofile Actions
-
-on:
-  workflow_dispatch:
-
+on: workflow_dispatch
 jobs:
   Testing:
-    runs-on: ubuntu-latest  # Corrected typo in 'ubuntu-latest'
+    runs-on: ubuntu-latest # Corrected typo in 'ubuntu-latest'
     steps:
-      - name: Testing workflow  # Updated the name for clarity
+      - name: Testing workflow # Updated the name for clarity
         run: echo "Workflow works!"
